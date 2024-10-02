@@ -1,0 +1,16 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "learning node js for creating APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saad Akram",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0"
+  }
+}
