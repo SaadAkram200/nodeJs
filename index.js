@@ -37,7 +37,7 @@
 
 const express = require("express");
 const mongoose = require('mongoose');
-const User = require("./user_model");  
+const User = require("./user_model");
 
 const app = express();
 
@@ -52,10 +52,10 @@ mongoose.connect(dbUri)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 
-app.listen(2000, () => {
-    console.log("Server connected on port 2000");
+const PORT = process.env.PORT || 2000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
-
 
 app.post('/post_users', async (req, res) => {
     try {
